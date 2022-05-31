@@ -12,4 +12,5 @@ Feature set includes:
 - Quantum chemical tensors (position-dependent monomer, basepair, dimer, trimer, tetramer)
 
 sgRNA file is a tab-delimited file with: chr, start, end, sgRNA, nucleotide sequence, cutting efficiency score
+
 Final feature matrix is a tab-delimited file with rows as sgRNAs and columns as features (each sgRNA has a unique ID and cutting efficiency score
