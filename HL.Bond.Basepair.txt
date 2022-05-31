@@ -1,0 +1,5 @@
+	AT	AU	GC	TA	UA	CG
+basepair.Hlgap.eVÊ	3.284	3.203	3.161	3.284	3.203	3.161
+basepair.No.electrons	98	92	98	98	92	98
+basepair.Hbond.energy	8.563800343	8.105396005	27.11950899	8.563800343	8.105396005	27.11950899
+						

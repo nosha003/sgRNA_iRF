@@ -1,0 +1,5 @@
+	A	G	C	T	U
+monomer.HLgap.eV)	4.150	4.142	3.481	4.056	4.082
+monomer.No.electrons	50	56	42	48	42
+					
+					
