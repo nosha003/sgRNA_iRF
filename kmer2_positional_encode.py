@@ -54,6 +54,3 @@ print('Done!')
 
 input_file.close()
 dep_file.close()
-
-#/gpfs/alpine/syb105/proj-shared/Personal/noshayjm/projects/seed/kmer2_positional_encode.py
-#python file.py data.txt
