@@ -1,0 +1,2 @@
+# sgRNA_iRF
+A panel of sgRNA sequences are encoded into a matrix incorporating PAM sequence distance, melting temperature, GC content, one-hot binary encoding, quantum chemical property encoding and expanded k-mer (one-hot and quantum) encodings. This feature set is then used to train an XAI iRF model.  Output metrics including R2, Pearson correlation, Feature Importance, Feature Effect, and Sample Influence are calculated.
