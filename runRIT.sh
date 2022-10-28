@@ -15,15 +15,17 @@ threaded=$3
 
 module load python/3.7-anaconda3
 
+# cd into iRF yvec directory
+
 cat ${prename}*.pathfile > ${prename}_${feature}.paths
-python /gpfs/alpine/syb105/proj-shared/Personal/jromero/PathAnalysis/trimpath.py ${prename}_${feature}.paths
+python RIT.code/trimpath.py ${prename}_${feature}.paths
 mv ${prename}_${feature}.paths ${prename}_${feature}.paths.old
 mv ${prename}_${feature}.paths.fixed ${prename}_${feature}.paths
-python /gpfs/alpine/syb105/proj-shared/Personal/jromero/PathAnalysis/preprocessPathsForRIT.py ${prename}_${feature}.paths
-/gpfs/alpine/syb105/proj-shared/Personal/jromero/codesnippets/ritw ${prename}_${feature}.paths.int.out > ${prename}_${feature}.full
+python RIT.code/preprocessPathsForRIT.py ${prename}_${feature}.paths
+RIT.code/ritw ${prename}_${feature}.paths.int.out > ${prename}_${feature}.full
 _rit
 sort -k1rg ${prename}_${feature}.full_rit > ${prename}_${feature}.full_rit_sort
 head -n 20 ${prename}_${feature}.full_rit_sort > ${prename}_${feature}.rit 
-python /gpfs/alpine/syb105/proj-shared/Personal/jromero/PathAnalysis/ritEval.py ${prename}_${feature}.importance4 ${feature} $threa
+python RIT.code/ritEval.py ${prename}_${feature}.importance4 ${feature} $threa
 ded 
 sort -k3rg ${prename}_${feature}.importance4.effect > ${prename}.importance4.effect_sorted 
